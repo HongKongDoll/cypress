@@ -1,0 +1,11 @@
+# Directories
+/node_modules
+/coverage
+/static
+/dist
+/build
+/examples/node_modules
+/types
+
+# Files
+.eslintcache
