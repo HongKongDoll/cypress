@@ -30,8 +30,8 @@ install:
     - npx cypress cache path
     - npx cypress cache list
     - $(npm bin)/print-env CI
-    - npm run cy:verify
-    - npm run cy:info
+    - npm cy:verify
+    - npm cy:info
 
 # all jobs that actually run tests can use the same definition
 .job_template:
@@ -41,10 +41,10 @@ install:
     # print CI environment variables for reference
     - $(npm bin)/print-env CI
     # start the server in the background
-    - yarn start
+    - npm start
     # run Cypress test in load balancing mode
     # - npm run e2e:record -- --parallel --group "electrons on GitLab CI"
-    - yarn cypress:run
+    - npm cy:run --record false
   artifacts:
     when: always
     paths:

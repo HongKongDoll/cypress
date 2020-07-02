@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info",
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "jest",
