@@ -6,8 +6,8 @@ stages:
 # to cache both npm modules and Cypress binary we use environment variables
 # to point at the folders we can list as paths in "cache" job settings
 variables:
-  npm_config_cache: "$CI_PROJECT_DIR/.npm"
-  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+  npm_config_cache: '$CI_PROJECT_DIR/.npm'
+  CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
 
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
@@ -44,7 +44,7 @@ install:
     - yarn start
     # run Cypress test in load balancing mode
     # - npm run e2e:record -- --parallel --group "electrons on GitLab CI"
-    - yarn cypress:run --parallel
+    - yarn cypress:run
   artifacts:
     when: always
     paths:
@@ -56,11 +56,11 @@ install:
 # all steps are the same, they come from the template above
 electrons-1:
   extends: .job_template
-electrons-2:
-  extends: .job_template
-electrons-3:
-  extends: .job_template
-electrons-4:
-  extends: .job_template
-electrons-5:
-  extends: .job_template
+# electrons-2:
+#   extends: .job_template
+# electrons-3:
+#   extends: .job_template
+# electrons-4:
+#   extends: .job_template
+# electrons-5:
+#   extends: .job_template
