@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/0x0006e/cypress#readme",
   "dependencies": {
+    "cypress": "^4.9.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
