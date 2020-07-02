@@ -7,5 +7,7 @@
 /examples/node_modules
 /types
 
+/cypress/videos
+
 # Files
 .eslintcache

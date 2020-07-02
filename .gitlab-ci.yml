@@ -41,10 +41,10 @@ install:
     # print CI environment variables for reference
     - $(npm bin)/print-env CI
     # start the server in the background
-    - npm start
+    - npm start &
     # run Cypress test in load balancing mode
     # - npm run e2e:record -- --parallel --group "electrons on GitLab CI"
-    - npm run cy:run --record false
+    - npm run cy:run
   artifacts:
     when: always
     paths:
