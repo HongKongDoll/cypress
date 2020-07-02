@@ -44,7 +44,7 @@ test:
     - npm start &
     # run Cypress test in load balancing mode
     # - npm run e2e:record -- --parallel --group "electrons on GitLab CI"
-    - npm run cy:run
+    # - npm run cy:run
   artifacts:
     when: always
     paths:
