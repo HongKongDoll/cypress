@@ -23,5 +23,5 @@ test:
     # make sure Cypress can run
     - yarn run cy:verify
     # start the server in the background
-    - yarn run start & npx wait-on http://localhost:8081
+    - yarn run start &
     - yarn run cy:run

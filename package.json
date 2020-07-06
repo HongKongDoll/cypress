@@ -28,8 +28,7 @@
     "@bahmutov/print-env": "^2.1.2",
     "cypress": "^4.9.0",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "wait-on": "^5.0.1"
+    "react-dom": "^16.13.0"
   },
   "devDependencies": {
     "@snowpack/app-scripts-react": "^1.4.0",
