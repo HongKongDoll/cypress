@@ -20,7 +20,7 @@ test:
     # print CI environment variables for reference
     # - $(npm bin)/print-env CI
     # make sure Cypress can run
-    - npm run cy:verify
+    - yarn run cy:verify
     # start the server in the background
-    - npm run start &
-    - npm run cy:run
+    - yarn run start & wait-on http://localhost:8081
+    - yarn run cy:run

@@ -1096,6 +1096,46 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@hapi/address@^4.0.1":
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-4.1.0.tgz?cache=0&sync_timestamp=1593993836406&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Faddress%2Fdownload%2F%40hapi%2Faddress-4.1.0.tgz#d60c5c0d930e77456fdcde2598e77302e2955e1d"
+  integrity sha1-1gxcDZMOd0Vv3N4lmOdzAuKVXh0=
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
+"@hapi/formula@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/@hapi/formula/download/@hapi/formula-2.0.0.tgz?cache=0&sync_timestamp=1593915889985&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Fformula%2Fdownload%2F%40hapi%2Fformula-2.0.0.tgz#edade0619ed58c8e4f164f233cda70211e787128"
+  integrity sha1-7a3gYZ7VjI5PFk8jPNpwIR54cSg=
+
+"@hapi/hoek@^9.0.0":
+  version "9.0.4"
+  resolved "https://registry.npm.taobao.org/@hapi/hoek/download/@hapi/hoek-9.0.4.tgz?cache=0&sync_timestamp=1593915910245&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Fhoek%2Fdownload%2F%40hapi%2Fhoek-9.0.4.tgz#e80ad4e8e8d2adc6c77d985f698447e8628b6010"
+  integrity sha1-6ArU6OjSrcbHfZhfaYRH6GKLYBA=
+
+"@hapi/joi@^17.1.1":
+  version "17.1.1"
+  resolved "https://registry.npm.taobao.org/@hapi/joi/download/@hapi/joi-17.1.1.tgz?cache=0&sync_timestamp=1593915960126&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Fjoi%2Fdownload%2F%40hapi%2Fjoi-17.1.1.tgz#9cc8d7e2c2213d1e46708c6260184b447c661350"
+  integrity sha1-nMjX4sIhPR5GcIxiYBhLRHxmE1A=
+  dependencies:
+    "@hapi/address" "^4.0.1"
+    "@hapi/formula" "^2.0.0"
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/pinpoint" "^2.0.0"
+    "@hapi/topo" "^5.0.0"
+
+"@hapi/pinpoint@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/@hapi/pinpoint/download/@hapi/pinpoint-2.0.0.tgz#805b40d4dbec04fc116a73089494e00f073de8df"
+  integrity sha1-gFtA1NvsBPwRanMIlJTgDwc96N8=
+
+"@hapi/topo@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/@hapi/topo/download/@hapi/topo-5.0.0.tgz?cache=0&sync_timestamp=1593916080558&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Ftopo%2Fdownload%2F%40hapi%2Ftopo-5.0.0.tgz#c19af8577fa393a06e9c77b60995af959be721e7"
+  integrity sha1-wZr4V3+jk6BunHe2CZWvlZvnIec=
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/@istanbuljs/load-nyc-config/download/@istanbuljs/load-nyc-config-1.1.0.tgz?cache=0&sync_timestamp=1589989527634&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40istanbuljs%2Fload-nyc-config%2Fdownload%2F%40istanbuljs%2Fload-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -1847,6 +1887,13 @@ aws4@^1.8.0:
   version "1.10.0"
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha1-oXs6jqgRBg501H0wYSJACtRJeuI=
+
+axios@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
+  dependencies:
+    follow-redirects "1.5.10"
 
 babel-jest@^25.4.0, babel-jest@^25.5.1:
   version "25.5.1"
@@ -2604,6 +2651,13 @@ debug@4.1.1, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "^2.1.1"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
+  dependencies:
+    ms "2.0.0"
+
 debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.npm.taobao.org/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -3067,6 +3121,13 @@ find-up@^4.0.0, find-up@^4.1.0:
   dependencies:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.5.10.tgz?cache=0&sync_timestamp=1592518278637&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio=
+  dependencies:
+    debug "=3.1.0"
 
 follow-redirects@^1.0.0:
   version "1.12.1"
@@ -5443,7 +5504,7 @@ rsvp@^4.8.4:
   resolved "https://registry.npm.taobao.org/rsvp/download/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
   integrity sha1-yPFVMR0Wf2jyHhaN9x7FsIMRNzQ=
 
-rxjs@^6.3.3:
+rxjs@^6.3.3, rxjs@^6.5.5:
   version "6.6.0"
   resolved "https://registry.npm.taobao.org/rxjs/download/rxjs-6.6.0.tgz?cache=0&sync_timestamp=1593653984590&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frxjs%2Fdownload%2Frxjs-6.6.0.tgz#af2901eedf02e3a83ffa7f886240ff9018bbec84"
   integrity sha1-rykB7t8C46g/+n+IYkD/kBi77IQ=
@@ -6241,6 +6302,17 @@ w3c-xmlserializer@^1.1.2:
     domexception "^1.0.1"
     webidl-conversions "^4.0.2"
     xml-name-validator "^3.0.0"
+
+wait-on@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.npm.taobao.org/wait-on/download/wait-on-5.0.1.tgz?cache=0&sync_timestamp=1591456170398&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwait-on%2Fdownload%2Fwait-on-5.0.1.tgz#7dadfe83c36fdf034de996a41aa094af5cf23077"
+  integrity sha1-fa3+g8Nv3wNN6ZakGqCUr1zyMHc=
+  dependencies:
+    "@hapi/joi" "^17.1.1"
+    axios "^0.19.2"
+    lodash "^4.17.15"
+    minimist "^1.2.5"
+    rxjs "^6.5.5"
 
 walker@^1.0.7, walker@~1.0.5:
   version "1.0.7"
