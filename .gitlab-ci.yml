@@ -16,7 +16,6 @@ test:
   image: cypress/base:12
   stage: test
   script:
-    - echo node -v
     # - npm ci
     - yarn install --frozen-lockfile # the same to npm ci
     # print CI environment variables for reference
