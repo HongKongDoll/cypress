@@ -1,8 +1,8 @@
 # to cache both npm modules and Cypress binary we use environment variables
 # to point at the folders we can list as paths in "cache" job settings
 variables:
-  npm_config_cache: "$CI_PROJECT_DIR/.npm"
-  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+  npm_config_cache: '$CI_PROJECT_DIR/.npm'
+  CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
 
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
@@ -16,9 +16,10 @@ test:
   image: cypress/base:10
   stage: test
   script:
-    - npm ci
+    # - npm ci
+    - yarn install --frozen-lockfile # the same to npm ci
     # print CI environment variables for reference
-    # - $(npm bin)/print-env CI
+    - $(npm bin)/print-env CI
     # make sure Cypress can run
     - yarn run cy:verify
     # start the server in the background
