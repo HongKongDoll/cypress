@@ -1,7 +1,7 @@
 # to cache both npm modules and Cypress binary we use environment variables
 # to point at the folders we can list as paths in "cache" job settings
 variables:
-  yarn_config_cache: '$CI_PROJECT_DIR/.yarn'
+  yarn_config_cache: '$CI_PROJECT_DIR/cache/yarn'
   CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
 
 # cache using branch name
@@ -9,7 +9,7 @@ variables:
 cache:
   key: one-key-to-rule-them-all
   paths:
-    - .yarn
+    - cache/yarn
     - cache/Cypress
 
 test:
