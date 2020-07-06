@@ -11,11 +11,13 @@ cache:
   paths:
     - cache/yarn
     - cache/Cypress
+    - node_modules
 
 test:
   image: cypress/base:12
   stage: test
   script:
+    - yarn cache dir
     # - npm ci
     - yarn install --frozen-lockfile # the same to npm ci
     # print CI environment variables for reference
