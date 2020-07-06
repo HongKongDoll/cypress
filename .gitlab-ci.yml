@@ -17,7 +17,7 @@ test:
   image: cypress/base:12
   stage: test
   script:
-    - echo yarn_config_cache
+    - echo ${yarn_config_cache}
     - yarn cache dir
     # - npm ci
     - yarn install --frozen-lockfile # the same to npm ci
