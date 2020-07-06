@@ -7,7 +7,7 @@ variables:
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
 before_script:
-  - yarn config set cache-folder yarn_config_cache
+  - yarn config set cache-folder ${yarn_config_cache}
 
 cache:
   key: one-key-to-rule-them-all
