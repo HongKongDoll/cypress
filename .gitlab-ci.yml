@@ -40,7 +40,7 @@ test:
 test2:
   stage: test2
   cache:
-    key: test1
+    key: test2
     paths:
       - node_modules
   script:
