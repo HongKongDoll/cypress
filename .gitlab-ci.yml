@@ -10,21 +10,21 @@ variables:
   CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
 
 # https://gitlab.com/help/ci/caching/index.md
-# cache:
-#   key: ${CI_JOB_NAME}
-#   paths:
-#     - cache/yarn
-#     - cache/Cypress
-#     - node_modules
+cache:
+  key: ${CI_JOB_NAME}
+  paths:
+    - cache/yarn
+    - cache/Cypress
+    - node_modules
 
 test:
   stage: test
-  cache:
-    key: test1
-    paths:
-      - cache/yarn
-      - cache/Cypress
-      - node_modules
+  # cache:
+  #   key: test1
+  #   paths:
+  #     - cache/yarn
+  #     - cache/Cypress
+  #     - node_modules
   script:
     - yarn config set cache-folder ${yarn_config_cache}
     # - npm ci
@@ -39,10 +39,10 @@ test:
 
 test2:
   stage: test2
-  cache:
-    key: test2
-    paths:
-      - node_modules
+  # cache:
+  #   key: test2
+  #   paths:
+  #     - node_modules
   script:
     - yarn install --frozen-lockfile
     - echo test2
