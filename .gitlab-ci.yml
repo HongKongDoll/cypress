@@ -4,6 +4,10 @@ variables:
   yarn_config_cache: '$CI_PROJECT_DIR/cache/yarn'
   CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
 
+stages:
+  - test
+  - test2
+
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
 before_script:
