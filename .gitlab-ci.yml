@@ -19,30 +19,19 @@ cache:
 
 test:
   stage: test
-  # cache:
-  #   key: test1
-  #   paths:
-  #     - cache/yarn
-  #     - cache/Cypress
-  #     - node_modules
   script:
     - yarn config set cache-folder ${yarn_config_cache}
-    # - npm ci
     - yarn install --frozen-lockfile # the same to npm ci
     # print CI environment variables for reference
     - $(yarn bin)/print-env CI
     # make sure Cypress can run
-    # - yarn run cy:verify
-    # # start the server in the background
-    # - yarn run start &
-    # - yarn run cy:run
+    - yarn run cy:verify
+    # start the server in the background
+    - yarn run start &
+    - yarn run cy:run
 
 test2:
   stage: test2
-  # cache:
-  #   key: test2
-  #   paths:
-  #     - node_modules
   script:
     - yarn install --frozen-lockfile
     - echo test2
