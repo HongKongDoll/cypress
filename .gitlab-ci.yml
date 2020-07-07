@@ -17,10 +17,6 @@ cache:
     - cache/Cypress
     - node_modules
 
-
-before_script:
-  - yarn config set cache-folder ${yarn_config_cache}
-
 test:
   stage: test
   cache:
@@ -30,6 +26,7 @@ test:
       - cache/Cypress
       - node_modules
   script:
+    - yarn config set cache-folder ${yarn_config_cache}
     # - npm ci
     - yarn install --frozen-lockfile # the same to npm ci
     # print CI environment variables for reference
