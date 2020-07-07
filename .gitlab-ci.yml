@@ -9,16 +9,15 @@ variables:
 before_script:
   - yarn config set cache-folder ${yarn_config_cache}
 
-cache:
-  key: one-key-to-rule-them-all
-  paths:
-    - cache/yarn
-    - cache/Cypress
-    - node_modules
-
 test:
   image: cypress/base:12
   stage: test
+  cache:
+    key: one-key-to-rule-them-all
+    paths:
+      - cache/yarn
+      - cache/Cypress
+      - node_modules
   script:
     # - npm ci
     - yarn install --frozen-lockfile # the same to npm ci
@@ -29,3 +28,8 @@ test:
     # start the server in the background
     - yarn run start &
     - yarn run cy:run
+
+test2:
+  stage: test2
+  script:
+    - echo test2
